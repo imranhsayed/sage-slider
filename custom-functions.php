@@ -1,9 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: imransayed
- * Date: 1/27/18
- * Time: 5:52 PM
+ * Custom functions for the Sage Slider Plugin
+ * Contains definition of constants, file includes and enqueuing stylesheets and scripts.
+ *
+ * @package Sage Slider
  */
 
 /* Define Constants */
@@ -18,7 +18,7 @@ define( 'SAGE_IMAGES_PATH', plugin_dir_path( __FILE__ ) . 'images' );
 
 /* File Includes */
 $sage_depedencies = apply_filters( 'sage_depedencies', array(
-	 SAGE_ADMIN_PATH . '/*.php',
+	SAGE_ADMIN_PATH . '/*.php',
 ));
 
 foreach ( $sage_depedencies as $path ) {

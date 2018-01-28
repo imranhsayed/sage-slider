@@ -1,14 +1,13 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: imransayed
- * Date: 1/27/18
- * Time: 10:20 PM
+ * Includes files
+ *
+ * @package Sage Slider
  */
 
 /* Include File */
 $file_array = array(
-	SAGE_CUSTOMIZER_DIR . '/class.customizer-init.php',
+	SAGE_CUSTOMIZER_DIR . '/class-sage-customizer.php',
 );
 
 foreach ( $file_array as $filename ) {

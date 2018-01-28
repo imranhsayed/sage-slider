@@ -1,4 +1,10 @@
 <?php
+/**
+ * Sage Slider Main File.
+ *
+ * @package Sage Slider
+ */
+
 /*
 Plugin Name:  Sage Slider
 Plugin URI:   https://supernovathemes.com/sage-plugin
@@ -16,10 +22,8 @@ Domain Path:  /languages
 include 'custom-functions.php';
 
 /**
- * Create Shortcode
- * Include [sage_slider] shortcode while creating a post or page content to display sage-slider
- *
- * @return string
+ * Create Shortcode.
+ * Include [sage_slider] shortcode while creating a post or page content to display sage-slider.
  */
 function sage_create_shortcode() {
 	include 'slider.php';

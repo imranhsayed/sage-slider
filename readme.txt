@@ -21,4 +21,5 @@ e.g.
 
 1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Use the shortcode to include the slider where you need it
+3. Use the shortcode [sage_slider] to include the slider where you need it while creating a new post or page.The shortcode value will be replaced by
+the slider on the front end.

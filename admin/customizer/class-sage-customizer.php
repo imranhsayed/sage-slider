@@ -3,10 +3,14 @@
  * Contains methods for customizing the theme customization screen.
  *
  * @link http://codex.wordpress.org/Theme_Customization_API
- * @since sage 1.0
+ * @since Sage Slider 1.0
+ * @package Sage Slider
  */
 
 if ( ! class_exists( 'SAGE_Customizer' ) ) {
+	/**
+	 * Class SAGE_Customizer
+	 */
 	class SAGE_Customizer {
 		/**
 		 * SAGE_Customizer constructor.
@@ -15,7 +19,7 @@ if ( ! class_exists( 'SAGE_Customizer' ) ) {
 		public function __construct() {
 
 			// Setup the Theme Customizer settings and controls...
-			add_action( 'customize_register' , array( $this, 'register' ) );
+			add_action( 'customize_register', array( $this, 'register' ) );
 
 			add_action( 'customize_controls_enqueue_scripts', array( $this, 'load_customizer_controls_scripts' ) );
 
@@ -26,14 +30,16 @@ if ( ! class_exists( 'SAGE_Customizer' ) ) {
 		 * you to add new sections and controls to the Theme Customize screen.
 		 *
 		 * @see add_action('customize_register',$func)
-		 * @param \WP_Customize_Manager $wp_customize
+		 * @param {object} $wp_customize WP_Customize_Manager.
 		 * @since sage 1.0
 		 */
 		public static function register( $wp_customize ) {
 
 			$file_path = SAGE_CUSTOMIZER_DIR . '/customizer-slider.php';
 
-			if ( file_exists( $file_path ) ) { include_once $file_path; }
+			if ( file_exists( $file_path ) ) {
+				include_once $file_path;
+			}
 		}
 
 		/**
