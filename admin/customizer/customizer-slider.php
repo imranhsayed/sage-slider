@@ -1,8 +1,7 @@
 <?php
 
 /**
- * IMPORTANT: Place this file code under customizer-settings.php to enable slider settings
- * And call slider.php file where you want to display slider
+ * Settings and controls for slider customizer.
  *
 /*==============================
             SLIDER

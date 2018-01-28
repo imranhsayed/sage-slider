@@ -8,7 +8,10 @@
 
 if ( ! class_exists( 'SAGE_Customizer' ) ) {
 	class SAGE_Customizer {
-
+		/**
+		 * SAGE_Customizer constructor.
+		 * Calls register() and load_customizer_controls_scripts().
+		 */
 		public function __construct() {
 
 			// Setup the Theme Customizer settings and controls...
@@ -22,9 +25,6 @@ if ( ! class_exists( 'SAGE_Customizer' ) ) {
 		 * This hooks into 'customize_register' (available as of WP 3.4) and allows
 		 * you to add new sections and controls to the Theme Customize screen.
 		 *
-		 * Note: To enable instant preview, we have to actually write a bit of custom
-		 * javascript. See live_preview() for more.
-		 *
 		 * @see add_action('customize_register',$func)
 		 * @param \WP_Customize_Manager $wp_customize
 		 * @since sage 1.0
@@ -36,6 +36,9 @@ if ( ! class_exists( 'SAGE_Customizer' ) ) {
 			if ( file_exists( $file_path ) ) { include_once $file_path; }
 		}
 
+		/**
+		 * Enqueues customizer-control.js file.
+		 */
 		public function load_customizer_controls_scripts() {
 
 			wp_enqueue_script(

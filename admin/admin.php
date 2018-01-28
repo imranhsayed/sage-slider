@@ -6,8 +6,7 @@
  * Time: 10:20 PM
  */
 
-define( 'SAGE_CUSTOMIZER_JS', SAGE_CUSTOMIZER_DIR . '/js' );
-
+/* Include File */
 $file_array = array(
 	SAGE_CUSTOMIZER_DIR . '/class.customizer-init.php',
 );

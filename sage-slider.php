@@ -12,9 +12,12 @@ Text Domain:  sage-slider
 Domain Path:  /languages
 */
 
+/* Include custom-functions.php file */
 include 'custom-functions.php';
+
 /**
  * Create Shortcode
+ * Include [sage_slider] shortcode while creating a post or page content to display sage-slider
  *
  * @return string
  */
@@ -23,5 +26,3 @@ function sage_create_shortcode() {
 }
 
 add_shortcode( 'sage_slider', 'sage_create_shortcode' );
-
-
