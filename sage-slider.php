@@ -7,11 +7,11 @@
 
 /*
 Plugin Name:  Sage Slider
-Plugin URI:   https://supernovathemes.com/sage-plugin
+Plugin URI:   http://supernovathemes.com/sage-plugin
 Description:  Slider Plugin
 Version:      1.0.0
 Author:       Imran Sayed
-Author URI:   https://supernovathemes.com
+Author URI:   https://profiles.wordpress.org/gsayed786
 License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  sage-slider
