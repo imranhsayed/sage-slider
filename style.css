@@ -15,9 +15,9 @@ button {
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-#sage-slider button {
-	background: none;
-	background-color: white;
+.sage-slider button {
+	background: none !important;
+	background-color: transparent !important;
 	border: 0;
 	color: inherit;
 	/* cursor: default; */
@@ -30,7 +30,18 @@ input[type="button"],
 	-ms-user-select: none;
 	padding: 0 0.20em 0 0.20em;
 	font-size: 2em;
+	display: inline-block;
+	margin: 0;
+	min-width: 0;
+	text-align: center;
 }
+
+.sage-slider button:hover {
+	background-color: transparent;
+	color: #181818;
+	text-decoration: none;
+}
+
 /* Slider */
 .slick-slider {
 	position: relative;
@@ -105,6 +116,7 @@ input[type="button"],
 
 .slick-slide img {
 	display: block;
+	width: 100%;
 }
 
 .slick-slide.slick-loading img {
@@ -117,6 +129,7 @@ input[type="button"],
 
 .slick-initialized .slick-slide {
 	display: block;
+	height: auto;
 }
 
 .slick-loading .slick-slide {
@@ -135,6 +148,8 @@ input[type="button"],
 
 .slick-dots {
 	text-align: center;
+	margin: 0;
+	-webkit-margin-before: 0;
 }
 
 .slick-dots li {
@@ -143,14 +158,44 @@ input[type="button"],
 
 .sage-slide-content {
 	position: absolute;
-	top: 2em;
+	top: 0.40em;
 }
 
-.entry-content .sage-slide-content a {
+#sage-slider-container .sage-slide-content {
 	text-decoration: none;
 	box-shadow: none;
-	/*background: linear-gradient(to left, rgba(255,0,0,0), rgba(0,0,0,1));*/
 	background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,165,0,1));
+	padding: 0.25em 5em 0.25em 0.50em;
+}
+
+#sage-slider-container .sage-slide-content a {
 	color: white;
-	padding: 0.25em 4em 0.25em 0.50em;
+	bottom: 0;
+	background: none;
+	border: none;
+	overflow: hidden;
+}
+
+#sage-slider-container a:hover {
+	color: #292929;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#sage-slider-container .slide-title {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+#sage-slider-container .slide-description {
+	font-size: 0.75em;
+	margin: 0;
+}
+
+#sage-slider-container button:before {
+	font-size: 10px;
+}
+
+#sage-slider-container li {
+	margin: 0;
 }

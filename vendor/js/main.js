@@ -18,7 +18,7 @@
 		 * @return {void}
 		 */
 		createMainSlider: function () {
-			var sageSlider = $('#sage-slider');
+			var sageSlider = $('.sage-slider');
 			if (sageSlider.length) {
 				sageSlider.slick({
 					// Custom Option
@@ -38,12 +38,12 @@
 		 * @return {void}
 		 */
 		styleSliderControls: function () {
-			var prevBtn = document.querySelector( '#sage-slider .slick-prev' ),
-				nextBtn = document.querySelector( '#sage-slider .slick-next' ),
+			var prevBtn = $( '.sage-slider .slick-prev' ),
+				nextBtn = $( '.sage-slider .slick-next' ),
 				slickDotBtn = $( '.slick-dots button' ),
 				slickLi = $( '.slick-dots' );
-			prevBtn.style.display = 'none';
-			nextBtn.style.display = 'none';
+			prevBtn.css( 'display', 'none');
+			nextBtn.css( 'display', 'none');
 			slickDotBtn.text( '.' );
 			slickLi.css( 'list-style', 'none' );
 		}

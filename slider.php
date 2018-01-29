@@ -41,10 +41,9 @@ if ( ! is_array( $slides ) || empty( $slides ) ) {
 	$slides = $sage_default_slider_settings;
 }
 
+if ( is_array( $slides ) ) : ?>
 
-if ( is_array( $slides ) && ( is_home() || is_front_page() ) ) : ?>
-
-	<div id="sage-slider" class="flexslider clearfix">
+	<div id="sage-slider-container" class="sage-slider" class="flexslider clearfix">
 
 		<?php
 		foreach ( $slides as $slide ) :
@@ -55,8 +54,8 @@ if ( is_array( $slides ) && ( is_home() || is_front_page() ) ) : ?>
 			?>
 			<div class="sage-slide">
 				<?php if ( $title || $description ) { ?>
-					<div class="sage-slide-content">
-						<div class="row">
+					<div class="sage-slide-content" >
+						<div class="sage-row">
 							<?php echo $title . $description; ?>
 						</div>
 					</div>
